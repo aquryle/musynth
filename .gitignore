@@ -56,3 +56,7 @@ dkms.conf
 
 # my configuration
 Hardware
+Reference
+./CM4/Debug
+./CM7/Debug
+*.cyclo
