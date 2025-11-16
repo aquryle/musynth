@@ -58,6 +58,10 @@ void MX_SPI1_Init(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define NOR_FLASH_NRST_Pin GPIO_PIN_11
+#define NOR_FLASH_NRST_GPIO_Port GPIOB
+#define EEPROM_NWC_Pin GPIO_PIN_5
+#define EEPROM_NWC_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

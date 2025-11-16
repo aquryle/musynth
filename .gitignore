@@ -54,9 +54,13 @@ dkms.conf
 # debug information files
 *.dwo
 
+#-------------------------------------------------------------------------------
 # my configuration
+#-------------------------------------------------------------------------------
 Hardware
-Reference
+References
+Documents
+
 ./CM4/Debug
 ./CM7/Debug
 *.cyclo

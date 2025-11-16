@@ -558,10 +558,10 @@ void MX_FMC_Init(void)
   hsdram1.Init.ReadPipeDelay = FMC_SDRAM_RPIPE_DELAY_1;
   /* SdramTiming */
   SdramTiming.LoadToActiveDelay = 2;
-  SdramTiming.ExitSelfRefreshDelay = 12;
-  SdramTiming.SelfRefreshTime = 7;
-  SdramTiming.RowCycleDelay = 11;
-  SdramTiming.WriteRecoveryTime = 3;
+  SdramTiming.ExitSelfRefreshDelay = 14;
+  SdramTiming.SelfRefreshTime = 9;
+  SdramTiming.RowCycleDelay = 13;
+  SdramTiming.WriteRecoveryTime = 5;
   SdramTiming.RPDelay = 4;
   SdramTiming.RCDDelay = 4;
 
@@ -602,6 +602,9 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13|GPIO_PIN_15, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, NOR_FLASH_NRST_Pin|EEPROM_NWC_Pin, GPIO_PIN_RESET);
+
   /*Configure GPIO pin : PE3 */
   GPIO_InitStruct.Pin = GPIO_PIN_3;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -615,6 +618,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : NOR_FLASH_NRST_Pin EEPROM_NWC_Pin */
+  GPIO_InitStruct.Pin = NOR_FLASH_NRST_Pin|EEPROM_NWC_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 

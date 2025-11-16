@@ -534,10 +534,10 @@ void MX_FMC_Init(void)
   hsdram1.Init.ReadPipeDelay = FMC_SDRAM_RPIPE_DELAY_1;
   /* SdramTiming */
   SdramTiming.LoadToActiveDelay = 2;
-  SdramTiming.ExitSelfRefreshDelay = 12;
-  SdramTiming.SelfRefreshTime = 7;
-  SdramTiming.RowCycleDelay = 11;
-  SdramTiming.WriteRecoveryTime = 3;
+  SdramTiming.ExitSelfRefreshDelay = 14;
+  SdramTiming.SelfRefreshTime = 9;
+  SdramTiming.RowCycleDelay = 13;
+  SdramTiming.WriteRecoveryTime = 5;
   SdramTiming.RPDelay = 4;
   SdramTiming.RCDDelay = 4;
 
