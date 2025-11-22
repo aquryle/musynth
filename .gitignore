@@ -60,7 +60,10 @@ dkms.conf
 Hardware
 References
 Documents
+Memo
 
-./CM4/Debug
-./CM7/Debug
+CM4/Debug
+CM4/Release
+CM7/Debug
+CM7/Release
 *.cyclo

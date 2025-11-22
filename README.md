@@ -1,2 +1,0 @@
-# musynth
-μSynth
