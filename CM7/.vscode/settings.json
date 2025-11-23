@@ -1,3 +1,31 @@
 {
+    "[c]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.stickyScroll.defaultModel": "foldingProviderModel",
+        "editor.suggest.insertMode": "replace",
 
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "files.encoding": "utf8"
+    },
+    "C_Cpp.clang_format_style": "{BaseedONStyle: Google, IndentWidth: 4, BreakBeforeBraces: Stroustrup, TabWidth: 4, UseTab: ForIndentation}",
+
+    "C_Cpp.doxygen.generateOnType": true,
+    "C_Cpp.doxygen.generatedStyle": "/**",
+    "C_Cpp.doxygen.sectionTags": [
+        "attention",
+        "tparam",
+        "param",
+        "result",
+        "returns",
+        "retval",
+        "exception",
+        "deprecated",
+        "warning",
+        "note"
+    ],
+
+    "doxdocgen.c.firstLine": "/***************************************************************************//**",
+    "doxdocgen.c.lastLine": "*******************************************************************************/",
 }
