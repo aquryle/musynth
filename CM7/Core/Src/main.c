@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -70,15 +70,6 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/***************************************************************************//**
- * @brief
- * @param a
- * @return int
-*******************************************************************************/
-static int sample_function(int a)
-{
-    return a + 1;
-}
 
 /* USER CODE END 0 */
 
@@ -155,7 +146,7 @@ int main(void)
 	MX_GPIO_Init();
 	MX_USART1_UART_Init();
 	/* USER CODE BEGIN 2 */
-
+	app_exec();
 	/* USER CODE END 2 */
 
 	/* Infinite loop */

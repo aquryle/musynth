@@ -59,12 +59,7 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 
 /* USER CODE BEGIN Private defines */
-#ifdef VSCODE
-#define CORE_CM7
-#define USE_HAL_DRIVER
-#define STM32H757xx
-#define USE_PWR_DIRECT_SMPS_SUPPLY
-#endif
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

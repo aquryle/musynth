@@ -6,10 +6,10 @@
         "editor.suggest.insertMode": "replace",
 
         "editor.tabSize": 4,
-        "editor.insertSpaces": true,
+        "editor.insertSpaces": false,
         "files.encoding": "utf8"
     },
-    "C_Cpp.clang_format_style": "{BaseedONStyle: Google, IndentWidth: 4, BreakBeforeBraces: Stroustrup, TabWidth: 4, UseTab: ForIndentation}",
+    "C_Cpp.clang_format_style": "{BaseedONStyle: Google, IndentWidth: 4, BreakBeforeBraces: Stroustrup, TabWidth: 4, UseTab: All}",
 
     "C_Cpp.doxygen.generateOnType": true,
     "C_Cpp.doxygen.generatedStyle": "/**",
@@ -28,4 +28,7 @@
 
     "doxdocgen.c.firstLine": "/***************************************************************************//**",
     "doxdocgen.c.lastLine": "*******************************************************************************/",
+    "files.associations": {
+        "wave.h": "c"
+    },
 }

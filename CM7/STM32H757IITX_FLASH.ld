@@ -177,6 +177,14 @@ SECTIONS
     . = ALIGN(8);
   } >RAM_D1
 
+  /* 波形データ格納用バッファ */
+  .wave_buffer :
+  {
+    . = ALIGN(4);
+    *(.wave_buffer)
+    . = ALIGN(4);
+  } >RAM_D3
+
   /* Remove information from the compiler libraries */
   /DISCARD/ :
   {
